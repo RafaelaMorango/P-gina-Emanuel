@@ -95,19 +95,8 @@ nav ul a:hover {
 
 .carousel-prev { left: 10px; }
 .carousel-next { right: 10px; }
-.img__logo{
-    max-width: 90%;
-    width: 70px;
-    fill:  #fff;
-    
-}
-.logo__img-nome{
-    display: flex;
-    align-items: flex-start;
-    align-items: center;
-    width: 50%;
-    gap: 50px;
-}
+
+
 
 /* Seções de Conteúdo */
 section {
@@ -188,3 +177,4 @@ footer {
         padding: 5px;
     }
 }
+
