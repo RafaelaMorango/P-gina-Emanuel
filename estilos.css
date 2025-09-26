@@ -1,0 +1,190 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #004d99; /* Azul escuro */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: #ffd700; /* Dourado */
+}
+
+/* Carrosel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    display: none; /* Oculta todas as imagens por padrão */
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-prev, .carousel-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
+.img__logo{
+    max-width: 90%;
+    width: 70px;
+    fill:  #fff;
+    
+}
+.logo__img-nome{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    width: 50%;
+    gap: 50px;
+}
+
+/* Seções de Conteúdo */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #004d99;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.servico-item {
+    background-color: #004d99;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.servico-item:hover {
+    transform: translateY(-5px);
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25d366; /* Verde WhatsApp */
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+/* Rodapé */
+footer {
+    background: #002e66; /* Azul bem escuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .carousel-prev, .carousel-next {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
